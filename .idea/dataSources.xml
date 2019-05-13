@@ -7,5 +7,11 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/myrailsapp-development</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="myrailsapp-test@localhost" uuid="cf6f2654-8b8f-4c21-8109-c667b5cb548c">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/myrailsapp-test</jdbc-url>
+    </data-source>
   </component>
 </project>
