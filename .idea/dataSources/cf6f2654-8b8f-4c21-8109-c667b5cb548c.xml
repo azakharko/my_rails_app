@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="myrailsapp-test@localhost">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.15">
+    <root id="1">
+      <ServerVersion>9.6.11</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="blueapron_audits_development">
+      <ObjectId>434975</ObjectId>
+      <StateNumber>35590</StateNumber>
+      <Owner>blueapron</Owner>
+    </database>
+    <database id="3" parent="1" name="blueapron_audits_test">
+      <ObjectId>431747</ObjectId>
+      <StateNumber>32988</StateNumber>
+      <Owner>blueapron</Owner>
+    </database>
+    <database id="4" parent="1" name="blueapron_development">
+      <ObjectId>434973</ObjectId>
+      <StateNumber>35588</StateNumber>
+      <Owner>blueapron</Owner>
+    </database>
+    <database id="5" parent="1" name="blueapron_preferences_development">
+      <ObjectId>434974</ObjectId>
+      <StateNumber>35589</StateNumber>
+      <Owner>blueapron</Owner>
+    </database>
+    <database id="6" parent="1" name="blueapron_preferences_test">
+      <ObjectId>431746</ObjectId>
+      <StateNumber>32987</StateNumber>
+      <Owner>blueapron</Owner>
+    </database>
+    <database id="7" parent="1" name="blueapron_test">
+      <ObjectId>431745</ObjectId>
+      <StateNumber>32986</StateNumber>
+      <Owner>blueapron</Owner>
+    </database>
+    <database id="8" parent="1" name="fes_development">
+      <ObjectId>17190</ObjectId>
+      <StateNumber>1260</StateNumber>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="9" parent="1" name="fes_test">
+      <ObjectId>22215</ObjectId>
+      <StateNumber>7993</StateNumber>
+      <Owner>andrii.zakharko</Owner>
+    </database>
+    <database id="10" parent="1" name="myrailsapp-development">
+      <ObjectId>455717</ObjectId>
+      <StateNumber>52072</StateNumber>
+      <Owner>andrii.zakharko</Owner>
+    </database>
+    <database id="11" parent="1" name="myrailsapp-test">
+      <ObjectId>455718</ObjectId>
+      <StateNumber>52073</StateNumber>
+      <Owner>andrii.zakharko</Owner>
+      <IntrospectionStateNumber>52078</IntrospectionStateNumber>
+      <Current>1</Current>
+    </database>
+    <database id="12" parent="1" name="postgres">
+      <ObjectId>12669</ObjectId>
+      <Comment>default administrative connection database</Comment>
+      <StateNumber>863</StateNumber>
+      <Owner>andrii.zakharko</Owner>
+    </database>
+    <role id="13" parent="1" name="andrii.zakharko">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <Replication>1</Replication>
+      <BypassRls>1</BypassRls>
+    </role>
+    <role id="14" parent="1" name="blueapron">
+      <ObjectId>16385</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="15" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="16" parent="1" name="postgres">
+      <ObjectId>16853</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+  </database-model>
+</dataSource>
