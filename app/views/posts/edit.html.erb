@@ -1,0 +1,30 @@
+<h1>Add post</h1>
+
+<% if @post.errors.any? %>
+  <div id="error_explanation">
+    <div class="alert alert-danger">
+      <%= pluralize(@post.errors.count, "error") %>
+      prohibited this post from being saved:
+      <ul>
+        <% @post.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+<% end %>
+
+<%=form_for :post, url: post_path, method: :patch, :html => { :class => "form-horizontal"} do |f| %>
+  <div class="form-group">
+    <%= f.label :title  %><br>
+    <%= f.text_field(:title, {:class => "form-control", :placeholder => "title"})  %>
+  </div>
+  <div class="form-group">
+    <%= f.label :body  %><br>
+    <%= f.text_area(:body, {:class => "form-control", :placeholder => "post"})  %>
+  </div>
+  <div class="form-group">
+    <%= f.submit({:class => "btn btn-default"})  %>
+    <%= link_to "Cancel", post_path(@post), :class => "btn btn-default" %>
+  </div>
+<% end %>
