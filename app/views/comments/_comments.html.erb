@@ -1,0 +1,10 @@
+<h3>Comments</h3>
+<% if !@post.comments.any? %>
+  <div class="well">No comments yet</div>
+<% end %>
+
+<% @post.comments.each do |comment| %>
+  <div class="well">
+    <strong><%= comment.username %></strong> : <p><%= comment.comment %></p>
+  </div>
+<% end %>
