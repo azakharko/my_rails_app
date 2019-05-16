@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-#
 class PostsController < ApplicationController
   def index
     @posts = Post.all
@@ -39,6 +38,8 @@ class PostsController < ApplicationController
   end
 
   def destroy
+    @comments = Comment.where(post: params[:id])
+    @comments.each(&:destroy)
     @post = Post.find(params[:id])
     @post.destroy
 

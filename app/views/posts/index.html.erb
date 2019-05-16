@@ -1,4 +1,10 @@
-<h1>Index</h1>
+<h1>Blog Post</h1>
+
+<% if !@posts.any? %>
+  <div class="well">
+    No posts yet. Go ahead and create one
+  </div>
+<% end %>
 
 <% @posts.each do |p| %>
   <div class="well">
