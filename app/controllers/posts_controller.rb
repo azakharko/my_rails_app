@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# this is post controller class
 class PostsController < ApplicationController
   def index
     @posts = Post.all
