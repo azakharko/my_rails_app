@@ -5,10 +5,10 @@
 </p>
 
 <%= link_to "Edit", edit_post_path(@post),
-            :class => "btn btn-default" %>
+            :class => "btn btn-link" %>
 <%= link_to "Delete", post_path(@post), method: :delete,
             data: {confirm: "Are you sure?"},
-            :class => "btn btn-danger" %>
+            :class => "btn btn-link" %>
 <hr>
 
 <%= render 'comments/comments' %>

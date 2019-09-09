@@ -5,6 +5,6 @@
 
 <% @post.comments.each do |comment| %>
   <div class="well">
-    <strong><%= comment.username %></strong> : <p><%= comment.comment %></p>
+    <strong><%= comment.username %></strong>: <%= comment.comment %>
   </div>
 <% end %>
